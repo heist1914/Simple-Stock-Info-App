@@ -33,7 +33,6 @@ You will need the following things properly installed on your computer.
 * 'ember server --proxy http://127.0.0.1:8080'
 * Visit stock search tool at [http://localhost:4200](http://localhost:4200).
 
-## If you need to compile the Java code use maven
-[Maven] https://maven.apache.org/
+## If you need to compile the Java code use [Maven] (https://maven.apache.org/)
 * cd into Simple-Stock-Info-App\stockserver folder 
 * run mvn clean package 
