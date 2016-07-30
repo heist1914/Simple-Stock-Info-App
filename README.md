@@ -17,7 +17,7 @@ You will need the following things properly installed on your computer.
 
 ## Important Step After Setup
 
-* zip ember-google-charts-mod.zip found in ember-stockclient directory
+* unzip ember-google-charts-mod.zip found in ember-stockclient directory
 * replace ember-stockclient\node_modules\ember-google-charts with ember-google-charts folder from zip
 
 ## Running 
