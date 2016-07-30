@@ -10,7 +10,7 @@ You will need the following things properly installed on your computer.
 * [Bower](http://bower.io/)
 
 ## Setup
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/heist1914/Simple-Stock-Info-App` this repository
 * change into the ember-stockclient directory
 * `npm install`
 * `bower install`
