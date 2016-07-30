@@ -1,0 +1,23 @@
+<h1>Company List</h1>
+
+Click Company Name For Price Chart
+
+{{#stocklist-filter
+filter = (action 'filterByStock')
+as |stocks|}}
+<ul class="list-group">
+  {{#each stocks as |stock|}}
+    <li class="list-group-item"> 
+		{{#link-to 'stockdetails' (query-params symbol=stock.symbol) class="list-group-item list-group-item-action"}}
+		{{stock.name}}  
+		{{/link-to}}
+		<ul class="">
+			<li class="list-group-item">Symbol: {{stock.symbol}}</li>
+			<li class="list-group-item">Market Cap: {{stock.marketCap}}</li>
+			<li class="list-group-item">Sector: {{stock.sector}}</li>
+			<li class="list-group-item">Industry: {{stock.industry}}</li>
+		</ul>	
+	</li>
+  {{/each}}
+</ul>
+{{/stocklist-filter}}

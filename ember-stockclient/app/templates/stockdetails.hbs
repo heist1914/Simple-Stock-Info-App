@@ -1,0 +1,21 @@
+<h2>{{model.name}}</h2>
+
+{{#if model.dataRetrieved}}
+	<div class="">
+		<h3>Average Price Chart</h3>
+
+		{{line-chart data=model.datePriceList options=lineChartOptions}}
+
+		<h3>Candle Stick Chart</h3>
+
+		{{candlestick-chart data=model.datePriceCandle options=candleChartOptions}}
+	</div>
+{{else}}
+	<div class="alert alert-warning">
+		<strong>Warning!</strong> Could Not Retrieve Data From Yahoo Finance API. Refresh To Attempt Again
+	</div>
+
+	<button type="button" class="btn btn-outline-primary">
+		{{ link-to 'Return To Stock List' 'stocklist' }}
+	</button>
+{{/if}}
