@@ -7,14 +7,26 @@ You will need the following things properly installed on your computer.
 * [Node.js](http://nodejs.org/) (with NPM)
 * [Ember CLI](http://ember-cli.com/)
 * [Java](https://java.com/en/download/)
+* [Bower](http://bower.io/)
+
+## Setup
+* `git clone <repository-url>` this repository
+* change into the ember-stockclient directory
+* `npm install`
+* `bower install`
+
+## Important Step After Setup
+
+* zip ember-google-charts-mod.zip found in ember-stockclient directory
+* replace ember-stockclient\node_modules\ember-google-charts with ember-google-charts folder from zip
 
 ## Running 
 
 * Start Spring Java Server Application
-* java -jar Simple-Stock-Info-App\ember-stockclient folder\target\gs-rest-service-0.1.0.jar
+* java -jar stockserver\target\gs-rest-service-0.1.0.jar
 
 * Start Ember Client Application
-* cd to Simple-Stock-Info-App\ember-stockclient folder
+* cd to ember-stockclient directory
 * 'ember server --proxy http://127.0.0.1:8080'
 * Visit stock search tool at [http://localhost:4200](http://localhost:4200).
 
