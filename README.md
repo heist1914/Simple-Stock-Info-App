@@ -21,10 +21,13 @@ You will need the following things properly installed on your computer.
 * replace ember-stockclient\node_modules\ember-google-charts with ember-google-charts folder from zip
 
 ## Running 
+* Open 2 terminal or command windows 
 
+* In window 1
 * Start Spring Java Server Application
 * java -jar stockserver\target\gs-rest-service-0.1.0.jar
 
+* In window 2
 * Start Ember Client Application
 * cd to ember-stockclient directory
 * 'ember server --proxy http://127.0.0.1:8080'
